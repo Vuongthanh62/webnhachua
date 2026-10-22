@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Chùa - Bài Tập Nhóm</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #121212; color: #ffffff; }
+
+        /* Thanh menu */
+        nav {
+            background-color: rgba(0, 0, 0, 0.85);
+            position: sticky; top: 0; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 50px; border-bottom: 1px solid #333;
+        }
+        .logo { font-size: 22px; font-weight: bold; color: #ffb7c5; }
+        .nav-links { display: flex; list-style: none; gap: 25px; }
+        .nav-links a { color: #e0e0e0; text-decoration: none; font-size: 16px; font-weight: 500; }
+        .nav-links a:hover, .nav-links a.active { color: #ffb7c5; }
+
+        /* Phần nội dung để trống (Màn hình tối giản) */
+        .empty-container {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #555;
+            font-style: italic;
+        }
+
+        footer { text-align: center; padding: 20px; background-color: #0a0a0a; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh menu navigation -->
+    <nav>
+        <div class="logo">Nhà Chùa ⛩️</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="baitap.html" class="active">Bài Tập Nhóm</a></li>
+        </ul>
+    </nav>
+
+    <!-- Khu vực trống -->
+    <div class="empty-container">
+        <p>Sẽ cập nhật bài tập sau...</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nhóm Nhà Chùa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

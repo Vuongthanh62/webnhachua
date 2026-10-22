@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Chùa - About Us</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #121212; color: #ffffff; }
+
+        /* Thanh menu */
+        nav {
+            background-color: rgba(0, 0, 0, 0.85);
+            position: sticky; top: 0; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 50px; border-bottom: 1px solid #333;
+        }
+        .logo { font-size: 22px; font-weight: bold; color: #ffb7c5; }
+        .nav-links { display: flex; list-style: none; gap: 25px; }
+        .nav-links a { color: #e0e0e0; text-decoration: none; font-size: 16px; font-weight: 500; }
+        .nav-links a:hover, .nav-links a.active { color: #ffb7c5; }
+
+        /* Nội dung trang About Us */
+        .about-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .about-container h1 {
+            color: #ffb7c5;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+
+        /* Lưới chứa thông tin 4 thành viên */
+        .member-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+
+        .detail-card {
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            border-left: 4px solid #ffb7c5;
+        }
+
+        .detail-card h3 {
+            color: #ffb7c5;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+
+        .detail-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ddd;
+            margin-bottom: 8px;
+        }
+
+        .detail-card span {
+            color: #ffdae0;
+            font-weight: 600;
+        }
+
+        footer { text-align: center; padding: 20px; background-color: #0a0a0a; color: #666; font-size: 0.9rem; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh menu navigation -->
+    <nav>
+        <div class="logo">Nhà Chùa ⛩️</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="baitap.html">Bài Tập Nhóm</a></li>
+        </ul>
+    </nav>
+
+    <!-- Thông tin chi tiết các thành viên -->
+    <div class="about-container">
+        <h1>Hồ Sơ Thành Viên Nhà Chùa</h1>
+        
+        <div class="member-details-grid">
+            
+            <!-- Thành viên 1: Bảo Quyên -->
+            <div class="detail-card">
+                <h3>Hồ Ngọc Bảo Quyên</h3>
+                <p><span>Lớp:</span> 12 Toán Tin</p>
+                <p><span>Thích:</span> Đọc truyện trinh thám, ăn và ngủ</p>
+                <p><span>Ghét:</span> trời nóng</p>
+            </div>
+
+            <!-- Thành viên 2 -->
+            <div class="detail-card">
+                <h3>Nguyễn Ngọc An Thư</h3>
+                <p><span>Lớp:</span> 12 Toán Tin</p>
+                <p><span>Thích:</span> Đá cầu</p>
+                <p><span>Ghét:</span> thằn lằn</p>
+            </div>
+
+            <!-- Thành viên 3 -->
+            <div class="detail-card">
+                <h3>Nguyễn Thái Tuấn</h3>
+                <p><span>Lớp:</span> 12 Toán Tin</p>
+                <p><span>Thích:</span> ăn dooki</p>
+                <p><span>Ghét:</span> ăn gà rán</p>
+            </div>
+
+            <!-- Thành viên 4 -->
+            <div class="detail-card">
+                <h3>Nguyễn Ngọc Phương Thảo</h3>
+                <p><span>Lớp:</span> 12 Toán Tin</p>
+                <p><span>Thích:</span> ăn gà</p>
+                <p><span>Ghét:</span> thằn lằn</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nhóm Nhà Chùa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

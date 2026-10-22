@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Chùa - Trang Chủ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Thanh điều hướng Navbar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.85);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffb7c5;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #ffb7c5;
+        }
+
+        /* Section 1: Header / Banner */
+        .hero {
+            position: relative;
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
+                        url('chua1.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #ffdae0;
+        }
+
+        /* Section 2: Trích dẫn trên nền đen + Hoa anh đào */
+        .quote-section {
+            position: relative;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+                        url('chua2.webp') center/cover fixed no-repeat;
+            text-align: center;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+        }
+
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .quote-card {
+            margin: 25px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #ffb7c5;
+            border-radius: 4px;
+        }
+
+        .quote-card p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* Section 3: Thành viên nhóm (4 thành viên) */
+        .members-section {
+            padding: 70px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .members-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #ffb7c5;
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .member-card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 25px 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .member-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(255, 183, 197, 0.2);
+        }
+
+        .member-card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffb7c5;
+            margin-bottom: 15px;
+        }
+
+        .member-card h3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .member-card p {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a0a;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh chuyển trang (Navbar) -->
+    <nav>
+        <div class="logo">Nhà Chùa ⛩️</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="baitap.html">Bài Tập Nhóm</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header: Ảnh nền & Tiêu đề -->
+    <header class="hero">
+        <h1>Welcome của Nhà Chùa</h1>
+        <p>Nơi lưu giữ những khoảnh khắc và bài học đáng nhớ</p>
+    </header>
+
+    <!-- Section: Trích dẫn trên nền đen + Hoa anh đào -->
+    <section class="quote-section">
+        <div class="quote-container">
+            <div class="quote-card">
+                <p>“Tâm bình thế giới bình, tâm an vạn sự an.”</p>
+            </div>
+            <div class="quote-card">
+                <p>“Cùng nhau học tập, cùng nhau tiến bộ trên con đường tri thức.”</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: 4 Thành viên -->
+    <section class="members-section">
+        <h2>Our members</h2>
+        <div class="members-grid">
+            
+            <!-- Thành viên 1 -->
+            <div class="member-card">
+                <img src="member1.jfif" alt="May">
+                <h3>Bảo Quyên</h3>
+                <p>Thành viên</p>
+            </div>
+
+            <!-- Thành viên 2 -->
+            <div class="member-card">
+                <img src="member2.jpg" alt="Thành viên 2">
+                <h3>An Thư</h3>
+                <p>Thành viên</p>
+            </div>
+
+            <!-- Thành viên 3 -->
+            <div class="member-card">
+                <img src="member3.webp" alt="Thành viên 3">
+                <h3>Thái Tuấn</h3>
+                <p>Thành viên</p>
+            </div>
+
+            <!-- Thành viên 4 -->
+            <div class="member-card">
+                <img src="member4.jpg" alt="Thành viên 4">
+                <h3>Phương Thảo</h3>
+                <p>Thành viên</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nhóm Nhà Chùa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
